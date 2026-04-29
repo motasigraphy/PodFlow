@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0D0D1A">
+    android:fillViewport="true"
+    android:background="@drawable/bg_podflow">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,40 +11,164 @@
         android:orientation="vertical"
         android:padding="24dp">
 
-        <!-- TITLE -->
+        <!-- TOP SPACE -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+
+        <!-- App Name -->
+        <TextView
+            android:text="PodFlow"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"/>
+
+        <!-- Title -->
         <TextView
             android:text="Welcome back 👋"
-            android:textSize="24sp"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"/>
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"/>
 
+        <!-- Subtitle -->
         <TextView
-            android:text="Sign in to continue"
+            android:text="Sign in to continue your podcast journey"
+            android:textSize="14sp"
             android:textColor="#AAAAAA"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- Email Label -->
+        <TextView
+            android:text="Email"
+            android:textColor="#AAAAAA"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/email"
+            android:hint="your@email.com"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#777777"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="12dp"
+            android:background="@drawable/input_bg"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
             android:layout_marginBottom="20dp"/>
 
-        <!-- EMAIL -->
-        <EditText
-            android:hint="your@email.com"
-            android:background="@android:color/darker_gray"
-            android:padding="12dp"
-            android:textColor="@android:color/white"
-            android:layout_marginBottom="12dp"/>
+        <!-- Password Label -->
+        <TextView
+            android:text="Password"
+            android:textColor="#AAAAAA"
+            android:layout_marginBottom="6dp"/>
 
-        <!-- PASSWORD -->
+        <!-- Password -->
         <EditText
-            android:hint="********"
-            android:background="@android:color/darker_gray"
-            android:padding="12dp"
-            android:textColor="@android:color/white"
-            android:layout_marginBottom="12dp"/>
+            android:id="@+id/password"
+            android:hint="••••••••"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#777777"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawableEnd="@drawable/ic_eye"
+            android:drawablePadding="12dp"
+            android:background="@drawable/input_bg"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
 
-        <!-- BUTTON -->
+        <!-- Forgot -->
+        <TextView
+            android:text="Forgot password?"
+            android:textColor="#A855F7"
+            android:textSize="12sp"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Button -->
         <Button
+            android:id="@+id/loginBtn"
             android:text="Sign In"
-            android:backgroundTint="#7B2FF7"
-            android:textColor="@android:color/white"
-            android:layout_marginTop="20dp"/>
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="@drawable/btn_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- Divider -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#333"/>
+
+            <TextView
+                android:text="  or continue with  "
+                android:textColor="#888"
+                android:textSize="12sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#333"/>
+        </LinearLayout>
+
+        <!-- Social -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_google"
+                android:background="@drawable/social_bg"
+                android:padding="18dp"
+                android:layout_margin="8dp"/>
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_apple"
+                android:background="@drawable/social_bg"
+                android:padding="18dp"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+        <!-- Signup -->
+        <TextView
+            android:text="Don't have an account? Sign up"
+            android:textColor="#AAAAAA"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
 
     </LinearLayout>
 
