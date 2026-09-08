@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+
+    <product id="001">
+        <nom>Shure MV7X XLR Dynamic Microphone</nom>
+        <prix devise="MAD">1632.48</prix>
+        <image>shure-mv7x.jpg</image>
+    </product>
+
+    <product id="002">
+        <nom>DJI Osmo Action 6 Essential Combo</nom>
+        <prix devise="MAD">3885.12</prix>
+        <image>dji-osmo-action6.jpg</image>
+    </product>
+
+    <product id="003">
+        <nom>DJI RS 3 Mini Gimbal</nom>
+        <prix devise="MAD">1814.88</prix>
+        <image>dji-rs3-mini.jpg</image>
+    </product>
+
+    <product id="004">
+        <nom>Sony FX30 Cinema Line</nom>
+        <prix devise="MAD">16406.88</prix>
+        <image>sony-fx30.jpg</image>
+    </product>
+
+</catalog>
